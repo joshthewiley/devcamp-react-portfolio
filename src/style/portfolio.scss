@@ -1,0 +1,36 @@
+.portfolio-wrapper{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .portfolio-item{
+    background-size:cover;
+    background-position:center;
+    height:300px;
+    overflow:hidden;
+  }
+}
+
+.portfolio-item-cover{
+  color:white;
+  background:rgba(0,0,0, 0.2);
+  text-align: center;
+  transition:1s;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &:hover{
+    background:rgba(0,0,0, 0.8);
+
+    .portfolio-description{
+      color:$blue;
+    }
+  }
+
+  .portfolio-description{
+    color:transparent;
+    transition:1s;
+  }
+}

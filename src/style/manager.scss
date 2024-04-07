@@ -1,0 +1,20 @@
+.manager-cont{
+  display:grid;
+  grid-template-columns: 3fr 1fr;
+
+  .portfolio-list{
+    background: $grey;
+  }
+  .portfolio-list-item{
+    padding:0 10px;
+    color:#FFFFFF;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    img{
+      width:100%;
+      padding:10px 0;
+    }
+  }
+}

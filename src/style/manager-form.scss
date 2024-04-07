@@ -1,0 +1,28 @@
+.manager-form{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 10px;
+  grid-gap: 10px;
+
+  .image-preview-cont{
+    a{
+      color: #AA2222;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .submit-button{
+    width: 100px;
+  }
+  
+  @include input-element();
+}

@@ -1,0 +1,32 @@
+@use "sass.color";
+
+@mixin base-button{
+  background-color:$blue;
+  border:none;
+  border-bottom:3px solid $blue;
+  color:white;
+  padding:1em;
+  font-size:0.9rem;
+  font-weight: 600;
+
+  transition: 0.4s;
+  &:hover{
+    background-color:darken($blue, 10%);
+    border-bottom:3px solid lighten($blue, 6%);
+  }
+}
+
+@mixin input-element{
+  input{
+    border-top:none;
+    border-left:none;
+    border-right: none;
+    border-bottom: 2px solid $blue;
+    padding:10px;
+    transition:border-bottom 0.4s;
+
+    &:focus{
+      border-bottom: 2px solid darken($blue, 10%);
+    }
+  }
+}

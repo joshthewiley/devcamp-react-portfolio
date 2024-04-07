@@ -1,0 +1,27 @@
+.login-page-wrapper{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc( 100vh - #{$nav-height} );
+
+  .left-column{
+    background-size: cover;
+    background-position: center 65%;
+  }
+}
+
+.login-form-wrapper{
+  display:flex;
+  flex-flow:column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  h2{
+    color:$blue;
+  }
+  .login-form{
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
